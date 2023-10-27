@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\API.Bll.Curso\API.Bll.Curso.csproj" />
+    <ProjectReference Include="..\API.Bll.Error\API.Bll.Error.csproj" />
+    <ProjectReference Include="..\API.Bll.Estudiante\API.Bll.Estudiante.csproj" />
+    <ProjectReference Include="..\API.Dal.Curso\API.Dal.Curso.csproj" />
+    <ProjectReference Include="..\API.Dal.Error\API.Dal.Error.csproj" />
+    <ProjectReference Include="..\API.Dal.Estudiante\API.Dal.Estudiante.csproj" />
+    <ProjectReference Include="..\API.Dal.General\API.Dal.General.csproj" />
+    <ProjectReference Include="..\API.Dto.Curso\API.Dto.Curso.csproj" />
+    <ProjectReference Include="..\API.Dto.Error\API.Dto.Error.csproj" />
+    <ProjectReference Include="..\API.Dto.Estudiante\API.Dto.Estudiante.csproj" />
+    <ProjectReference Include="..\API.Dto.General\API.Dto.General.csproj" />
+    <ProjectReference Include="..\WebAPI\WebAPI.csproj" />
+  </ItemGroup>
+
+</Project>
