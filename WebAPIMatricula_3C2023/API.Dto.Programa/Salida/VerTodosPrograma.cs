@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace API.Dto.Programa.Salida
 {
-    public class VerTodosProgramas : General.RespuestaAPI
+    public class VerTodosPrograma : General.RespuestaAPI
     {
         public List<DatosPrograma> ListaProgramas { get; set; }
 
-        public VerTodosProgramas()
+        public VerTodosPrograma()
         {
             ListaProgramas = new List<DatosPrograma>();
         }

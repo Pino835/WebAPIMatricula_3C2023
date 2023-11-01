@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace API.Dto.Departamento.Entrada
 {
-    public class VerTodosDepartamentos : General.EntradaAPI
+    public class VerTodosDepartamento : General.EntradaAPI
     {
     }
 }
