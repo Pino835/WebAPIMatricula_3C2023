@@ -15,19 +15,34 @@
     <ProjectReference Include="..\API.Bll.Departamento\API.Bll.Departamento.csproj" />
     <ProjectReference Include="..\API.Bll.Error\API.Bll.Error.csproj" />
     <ProjectReference Include="..\API.Bll.Estudiante\API.Bll.Estudiante.csproj" />
+
+    <ProjectReference Include="..\API.Bll.Fin\API.Bll.Finanza.csproj" />
+    <ProjectReference Include="..\API.Bll.Pro\API.Bll.Profesor.csproj" />
+
     <ProjectReference Include="..\API.Bll.Programa\API.Bll.Programa.csproj" />
+
     <ProjectReference Include="..\API.Dal.Curso\API.Dal.Curso.csproj" />
     <ProjectReference Include="..\API.Dal.Departamentos\API.Dal.Departamentos.csproj" />
     <ProjectReference Include="..\API.Dal.Error\API.Dal.Error.csproj" />
     <ProjectReference Include="..\API.Dal.Estudiante\API.Dal.Estudiante.csproj" />
+    <ProjectReference Include="..\API.Dal.Fin\API.Dal.Finanza.csproj" />
     <ProjectReference Include="..\API.Dal.General\API.Dal.General.csproj" />
+
+    <ProjectReference Include="..\API.Dal.Pro\API.Dal.Profesor.csproj" />
+
     <ProjectReference Include="..\API.Dal.Programa\API.Dal.Programa.csproj" />
+
     <ProjectReference Include="..\API.Dto.Curso\API.Dto.Curso.csproj" />
     <ProjectReference Include="..\API.Dto.Departamento\API.Dto.Departamento.csproj" />
     <ProjectReference Include="..\API.Dto.Error\API.Dto.Error.csproj" />
     <ProjectReference Include="..\API.Dto.Estudiante\API.Dto.Estudiante.csproj" />
+    <ProjectReference Include="..\API.Dto.Fin\API.Dto.Finanza.csproj" />
     <ProjectReference Include="..\API.Dto.General\API.Dto.General.csproj" />
+
+    <ProjectReference Include="..\API.Dto.Pro\API.Dto.Profesor.csproj" />
+
     <ProjectReference Include="..\API.Dto.Programa\API.Dto.Programa.csproj" />
+
     <ProjectReference Include="..\WebAPI\WebAPI.csproj" />
   </ItemGroup>
 

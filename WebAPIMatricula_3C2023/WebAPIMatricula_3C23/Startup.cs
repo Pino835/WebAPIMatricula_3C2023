@@ -1,9 +1,13 @@
 ﻿using API.Bll.Error.Interfaces;
 using API.Bll.Estudiante.Interfaces;
 using API.Bll.Curso.Interfaces;
+using API.Bll.Profesor.Interfaces;
+using API.Bll.Finanza.Interfaces;
 using API.Dal.Error;
 using API.Dal.Estudiante;
 using API.Dal.Curso;
+using API.Dal.Profesor;
+using API.Dal.Finanza;
 using API.Dto.General;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
@@ -82,6 +86,10 @@ namespace WebAPIMatricula_3C2023
             services.AddScoped<IAdEstudiante, AdEstudiante>();
             services.AddScoped<IAdError, AdError>();
             services.AddScoped<IAdCurso, AdCurso>();
+
+            services.AddScoped<IAdProfesor, AdProfesor>();
+            services.AddScoped<IAdFinanza, AdFinanza>();
+
             services.AddScoped<IAdDepartamento, AdDepartamento>();
             services.AddScoped<IAdPrograma, AdPrograma>();
             services.AddControllers();
