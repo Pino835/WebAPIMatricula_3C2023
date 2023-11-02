@@ -20,6 +20,10 @@ using API.Bll.Departamento.Interfaces;
 using API.Dal.Departamento;
 using API.Dal.Programa;
 using API.Bll.Programa.Interfaces;
+using API.Bll.Calificacion.Interfaces;
+using API.Dal.Calificacion;
+using API.Bll.Evento.Interfaces;
+using API.Dal.Evento;
 
 namespace WebAPIMatricula_3C2023
 {
@@ -92,6 +96,10 @@ namespace WebAPIMatricula_3C2023
 
             services.AddScoped<IAdDepartamento, AdDepartamento>();
             services.AddScoped<IAdPrograma, AdPrograma>();
+
+            services.AddScoped<IAdCalificacion, AdCalificacion>();
+            services.AddScoped<IAdEvento, AdEvento>();
+
             services.AddControllers();
 
             services.AddSwaggerGen(c =>
