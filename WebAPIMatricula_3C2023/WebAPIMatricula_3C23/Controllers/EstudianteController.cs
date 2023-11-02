@@ -36,7 +36,7 @@ namespace WebAPIMatricula_3C2023.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("VerTodosEstudiantes")]
         public IActionResult VerTodosEstudiantes(API.Dto.Estudiante.Entrada.VerTodosEstudiantes pDatos)
         {
@@ -56,7 +56,7 @@ namespace WebAPIMatricula_3C2023.Controllers
         }
 
 
-        [HttpDelete]
+        [HttpPost]
         [Route("EliminarEstudiante")]
         public IActionResult EliminarEstudiante([FromBody] API.Dto.Estudiante.Entrada.EliminarEstudiante pDatos)
         {
@@ -75,7 +75,7 @@ namespace WebAPIMatricula_3C2023.Controllers
         }
 
 
-        [HttpGet]
+        [HttpPost]
         [Route("VerDetalleEstudiante")]
         public IActionResult VerDetalleEstudiante([FromBody] API.Dto.Estudiante.Entrada.VerDetalleEstudiante pDatos)
         {
@@ -93,7 +93,7 @@ namespace WebAPIMatricula_3C2023.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpPost]
         [Route("EditarEstudiante")]
         public IActionResult EditarEstudiante([FromBody] API.Dto.Estudiante.Entrada.EditarEstudiante pDatos)
         {
