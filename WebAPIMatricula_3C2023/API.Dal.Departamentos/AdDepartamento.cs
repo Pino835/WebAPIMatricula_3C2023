@@ -45,7 +45,6 @@ namespace API.Dal.Departamento
                     dato.HorarioAtencion = objDr["HorarioAtencion"].ToString();
                     dato.AulaAtencion = Convert.ToInt32(objDr["AulaAtencion"].ToString());
                     dato.CodigoCarrera = Convert.ToInt32(objDr["CodigoCarrera"].ToString());
-                    dato.CodigoProfesor = Convert.ToInt32(objDr["CodigoProfesor"].ToString());
 
                     resultado.ListaDepartamentos.Add(dato);
                 }
@@ -84,7 +83,6 @@ namespace API.Dal.Departamento
                     resultado.HorarioAtencion = objDr["HorarioAtencion"].ToString();
                     resultado.AulaAtencion = Convert.ToInt32(objDr["AulaAtencion"].ToString());
                     resultado.CodigoCarrera = Convert.ToInt32(objDr["CodigoCarrera"].ToString());
-                    resultado.CodigoProfesor = Convert.ToInt32(objDr["CodigoProfesor"].ToString());
                 }
             }
             catch (Exception)
@@ -116,7 +114,6 @@ namespace API.Dal.Departamento
                 oComando.Parameters.Add(manager.GetParametro("@HorarioAtencion", pInformacion.HorarioAtencion));
                 oComando.Parameters.Add(manager.GetParametro("@AulaAtencion", pInformacion.AulaAtencion));
                 oComando.Parameters.Add(manager.GetParametro("@CodigoCarrera", pInformacion.CodigoCarrera));
-                oComando.Parameters.Add(manager.GetParametro("@CodigoProfesor", pInformacion.CodigoProfesor));
 
                 IDataReader objDr = manager.GetDataReader(oComando, oConexion, "dbo.Editar_Departamento");
 
@@ -128,7 +125,6 @@ namespace API.Dal.Departamento
                     resultado.HorarioAtencion = objDr["HorarioAtencion"].ToString();
                     resultado.AulaAtencion = Convert.ToInt32(objDr["AulaAtencion"].ToString());
                     resultado.CodigoCarrera = Convert.ToInt32(objDr["CodigoCarrera"].ToString());
-                    resultado.CodigoProfesor = Convert.ToInt32(objDr["CodigoProfesor"].ToString());
                 }
 
             }
@@ -161,7 +157,6 @@ namespace API.Dal.Departamento
                 oComando.Parameters.Add(manager.GetParametro("@HorarioAtencion", pInformacion.HorarioAtencion));
                 oComando.Parameters.Add(manager.GetParametro("@AulaAtencion", pInformacion.AulaAtencion));
                 oComando.Parameters.Add(manager.GetParametro("@CodigoCarrera", pInformacion.CodigoCarrera));
-                oComando.Parameters.Add(manager.GetParametro("@CodigoProfesor", pInformacion.CodigoProfesor));
 
                 IDataReader objDr = manager.GetDataReader(oComando, oConexion, "dbo.Agregar_Departamento");
 

@@ -44,7 +44,6 @@ namespace API.Dal.Programa
                     dato.Modalidad = objDr["Modalidad"].ToString();
                     dato.Idioma = objDr["Idioma"].ToString();
                     dato.CantidadCuatrimestres = Convert.ToInt32(objDr["CantidadCuatrimestres"].ToString());
-                    dato.CodigoDepartamento = Convert.ToInt32(objDr["CodigoDepartamento"].ToString());
 
                     resultado.ListaProgramas.Add(dato);
                 }
@@ -82,7 +81,6 @@ namespace API.Dal.Programa
                     resultado.Modalidad = objDr["Modalidad"].ToString();
                     resultado.Idioma = objDr["Idioma"].ToString();
                     resultado.CantidadCuatrimestres = Convert.ToInt32(objDr["CantidadCuatrimestres"].ToString());
-                    resultado.CodigoDepartamento = Convert.ToInt32(objDr["CodigoDepartamento"].ToString());
                 }
             }
             catch (Exception)
@@ -113,7 +111,6 @@ namespace API.Dal.Programa
                 oComando.Parameters.Add(manager.GetParametro("@Modalidad", pInformacion.Modalidad));
                 oComando.Parameters.Add(manager.GetParametro("@Idioma", pInformacion.Idioma));
                 oComando.Parameters.Add(manager.GetParametro("@CantidadCuatrimestres", pInformacion.CantidadCuatrimestres));
-                oComando.Parameters.Add(manager.GetParametro("@CodigoDepartamento", pInformacion.CodigoDepartamento));
 
                 IDataReader objDr = manager.GetDataReader(oComando, oConexion, "dbo.Editar_Programa");
 
@@ -124,7 +121,6 @@ namespace API.Dal.Programa
                     resultado.Modalidad = objDr["Modalidad"].ToString();
                     resultado.Idioma = objDr["Idioma"].ToString();
                     resultado.CantidadCuatrimestres = Convert.ToInt32(objDr["CantidadCuatrimestres"].ToString());
-                    resultado.CodigoDepartamento = Convert.ToInt32(objDr["CodigoDepartamento"].ToString());
                 }
 
             }
@@ -156,7 +152,6 @@ namespace API.Dal.Programa
                 oComando.Parameters.Add(manager.GetParametro("@Modalidad", pInformacion.Modalidad));
                 oComando.Parameters.Add(manager.GetParametro("@Idioma", pInformacion.Idioma));
                 oComando.Parameters.Add(manager.GetParametro("@CantidadCuatrimestres", pInformacion.CantidadCuatrimestres));
-                oComando.Parameters.Add(manager.GetParametro("@CodigoDepartamento", pInformacion.CodigoDepartamento));
 
                 IDataReader objDr = manager.GetDataReader(oComando, oConexion, "dbo.Agregar_Programa");
 

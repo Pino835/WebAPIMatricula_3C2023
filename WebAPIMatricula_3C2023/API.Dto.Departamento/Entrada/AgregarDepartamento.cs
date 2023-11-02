@@ -13,6 +13,5 @@ namespace API.Dto.Departamento.Entrada
         public string HorarioAtencion { get; set; }
         public int AulaAtencion { get; set; }
         public int CodigoCarrera { get; set; }
-        public int CodigoProfesor { get; set; }
     }
 }

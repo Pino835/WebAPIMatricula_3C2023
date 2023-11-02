@@ -13,6 +13,5 @@ namespace API.Dto.Programa.Salida
         public string Modalidad { get; set; }
         public string Idioma { get; set; }
         public int CantidadCuatrimestres { get; set; }
-        public int CodigoDepartamento { get; set; }
     }
 }
