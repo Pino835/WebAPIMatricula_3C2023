@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\API.Bll.Pro\API.Bll.Profesor.csproj" />
+    <ProjectReference Include="..\API.Dal.General\API.Dal.General.csproj" />
+    <ProjectReference Include="..\API.Dto.General\API.Dto.General.csproj" />
+    <ProjectReference Include="..\API.Dto.Pro\API.Dto.Profesor.csproj" />
+  </ItemGroup>
+
+</Project>
