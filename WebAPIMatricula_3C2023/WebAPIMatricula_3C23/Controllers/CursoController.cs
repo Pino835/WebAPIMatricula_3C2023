@@ -36,7 +36,7 @@ namespace WebAPIMatricula_3C2023.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("VerTodosCursos")]
         public IActionResult VerTodosCursos(API.Dto.Curso.Entrada.VerTodosCursos pDatos)
         {
@@ -56,7 +56,7 @@ namespace WebAPIMatricula_3C2023.Controllers
         }
 
 
-        [HttpDelete]
+        [HttpPost]
         [Route("EliminarCurso")]
         public IActionResult EliminarCurso([FromBody] API.Dto.Curso.Entrada.EliminarCurso pDatos)
         {
@@ -75,7 +75,7 @@ namespace WebAPIMatricula_3C2023.Controllers
         }
 
 
-        [HttpGet]
+        [HttpPost]
         [Route("VerDetalleCurso")]
         public IActionResult VerDetalleCurso([FromBody] API.Dto.Curso.Entrada.VerDetalleCurso pDatos)
         {
@@ -93,7 +93,7 @@ namespace WebAPIMatricula_3C2023.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpPost]
         [Route("EditarCurso")]
         public IActionResult EditarCurso([FromBody] API.Dto.Curso.Entrada.EditarCurso pDatos)
         {

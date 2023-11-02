@@ -16,6 +16,10 @@ using Microsoft.OpenApi.Models;
 using System.Text;
 using WebAPI;
 using WebAPI.Services;
+using API.Bll.Departamento.Interfaces;
+using API.Dal.Departamento;
+using API.Dal.Programa;
+using API.Bll.Programa.Interfaces;
 
 namespace WebAPIMatricula_3C2023
 {
@@ -82,8 +86,12 @@ namespace WebAPIMatricula_3C2023
             services.AddScoped<IAdEstudiante, AdEstudiante>();
             services.AddScoped<IAdError, AdError>();
             services.AddScoped<IAdCurso, AdCurso>();
+
             services.AddScoped<IAdProfesor, AdProfesor>();
             services.AddScoped<IAdFinanza, AdFinanza>();
+
+            services.AddScoped<IAdDepartamento, AdDepartamento>();
+            services.AddScoped<IAdPrograma, AdPrograma>();
             services.AddControllers();
 
             services.AddSwaggerGen(c =>
