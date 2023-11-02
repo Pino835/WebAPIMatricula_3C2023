@@ -36,7 +36,7 @@ namespace WebAPIMatricula_3C2023.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("VerTodosPrograma")]
         public IActionResult VerTodosPrograma(API.Dto.Programa.Entrada.VerTodosPrograma pDatos)
         {
@@ -56,7 +56,7 @@ namespace WebAPIMatricula_3C2023.Controllers
         }
 
 
-        [HttpDelete]
+        [HttpPost]
         [Route("EliminarPrograma")]
         public IActionResult EliminarPrograma([FromBody] API.Dto.Programa.Entrada.EliminarPrograma pDatos)
         {
@@ -75,7 +75,7 @@ namespace WebAPIMatricula_3C2023.Controllers
         }
 
 
-        [HttpGet]
+        [HttpPost]
         [Route("VerDetallePrograma")]
         public IActionResult VerDetallePrograma([FromBody] API.Dto.Programa.Entrada.VerDetallePrograma pDatos)
         {
@@ -93,7 +93,7 @@ namespace WebAPIMatricula_3C2023.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpPost]
         [Route("EditarPrograma")]
         public IActionResult EditarPrograma([FromBody] API.Dto.Programa.Entrada.EditarPrograma pDatos)
         {

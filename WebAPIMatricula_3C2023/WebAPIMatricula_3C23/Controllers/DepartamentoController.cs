@@ -36,7 +36,7 @@ namespace WebAPIMatricula_3C2023.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("VerTodosDepartamento")]
         public IActionResult VerTodosDepartamento(API.Dto.Departamento.Entrada.VerTodosDepartamento pDatos)
         {
@@ -56,7 +56,7 @@ namespace WebAPIMatricula_3C2023.Controllers
         }
 
 
-        [HttpDelete]
+        [HttpPost]
         [Route("EliminarDepartamento")]
         public IActionResult EliminarDepartamento([FromBody] API.Dto.Departamento.Entrada.EliminarDepartamento pDatos)
         {
@@ -75,7 +75,7 @@ namespace WebAPIMatricula_3C2023.Controllers
         }
 
 
-        [HttpGet]
+        [HttpPost]
         [Route("VerDetalleDepartamento")]
         public IActionResult VerDetalleDepartamento([FromBody] API.Dto.Departamento.Entrada.VerDetalleDepartamento pDatos)
         {
@@ -93,7 +93,7 @@ namespace WebAPIMatricula_3C2023.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpPost]
         [Route("EditarDepartamento")]
         public IActionResult EditarDepartamento([FromBody] API.Dto.Departamento.Entrada.EditarDepartamento pDatos)
         {
