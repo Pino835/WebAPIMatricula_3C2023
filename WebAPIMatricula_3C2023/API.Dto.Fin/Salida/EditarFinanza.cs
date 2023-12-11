@@ -10,9 +10,9 @@ namespace API.Dto.Finanza.Salida
     {
         public int Codigo { get; set; }
         public int TotalMaterias { get; set; }
-        public int CobroMatricula { get; set; }
-        public int CobroPoliza { get; set; }
-        public int CobroTechFee { get; set; }
+        public float CobroMatricula { get; set; }
+        public float CobroPoliza { get; set; }
+        public float CobroTechFee { get; set; }
         public int CodigoMatricula { get; set; }
     }
 }

@@ -41,9 +41,9 @@ namespace API.Dal.Finanza
                     dato = new DatosFinanza();
                     dato.Codigo = Convert.ToInt32(objDr["Codigo"].ToString());
                     dato.TotalMaterias = Convert.ToInt32(objDr["TotalMaterias"].ToString());
-                    dato.CobroMatricula = Convert.ToInt32(objDr["CobroMatricula"].ToString());
-                    dato.CobroPoliza = Convert.ToInt32(objDr["CobroPoliza"].ToString());
-                    dato.CobroTechFee = Convert.ToInt32(objDr["CobroTechFee"].ToString());
+                    dato.CobroMatricula = (float)Convert.ToDouble(objDr["CobroMatricula"].ToString());
+                    dato.CobroPoliza = (float)Convert.ToDouble(objDr["CobroPoliza"].ToString());
+                    dato.CobroTechFee = (float)Convert.ToDouble(objDr["CobroTechFee"].ToString());
                     dato.CodigoMatricula = Convert.ToInt32(objDr["CodigoMatricula"].ToString());
 
                     resultado.ListaFinanzas.Add(dato);
@@ -79,9 +79,9 @@ namespace API.Dal.Finanza
                 {
                     resultado.Codigo = Convert.ToInt32(objDr["Codigo"].ToString());
                     resultado.TotalMaterias = Convert.ToInt32(objDr["TotalMaterias"].ToString());
-                    resultado.CobroMatricula = Convert.ToInt32(objDr["CobroMatricula"].ToString());
-                    resultado.CobroPoliza = Convert.ToInt32(objDr["CobroPoliza"].ToString());
-                    resultado.CobroTechFee = Convert.ToInt32(objDr["CobroTechFee"].ToString());
+                    resultado.CobroMatricula = (float)Convert.ToDouble(objDr["CobroMatricula"].ToString());
+                    resultado.CobroPoliza = (float)Convert.ToDouble(objDr["CobroPoliza"].ToString());
+                    resultado.CobroTechFee = (float)Convert.ToDouble(objDr["CobroTechFee"].ToString());
                     resultado.CodigoMatricula = Convert.ToInt32(objDr["CodigoMatricula"].ToString());
                 }
             }
@@ -121,9 +121,9 @@ namespace API.Dal.Finanza
                 {
                     resultado.Codigo = Convert.ToInt32(objDr["Codigo"].ToString());
                     resultado.TotalMaterias = Convert.ToInt32(objDr["TotalMaterias"].ToString());
-                    resultado.CobroMatricula = Convert.ToInt32(objDr["CobroMatricula"].ToString());
-                    resultado.CobroPoliza = Convert.ToInt32(objDr["CobroPoliza"].ToString());
-                    resultado.CobroTechFee = Convert.ToInt32(objDr["CobroTechFee"].ToString());
+                    resultado.CobroMatricula = (float)Convert.ToDouble(objDr["CobroMatricula"].ToString());
+                    resultado.CobroPoliza = (float)Convert.ToDouble(objDr["CobroPoliza"].ToString());
+                    resultado.CobroTechFee = (float)Convert.ToDouble(objDr["CobroTechFee"].ToString());
                     resultado.CodigoMatricula = Convert.ToInt32(objDr["CodigoMatricula"].ToString());
                 }
 

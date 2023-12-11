@@ -6,7 +6,7 @@ namespace UI.WebMatricula3C2023.Logica
     {
         public async Task<string> ConsumirAPI(string oEncabezado, string oCuerpo, string token)
         {
-            string oServidor = "https://localhost:7131/api/v1/";
+            string oServidor = "https://localhost:7029/api/v1/";
 
             string oUrlServicio = string.Concat(oServidor, oEncabezado);
 
