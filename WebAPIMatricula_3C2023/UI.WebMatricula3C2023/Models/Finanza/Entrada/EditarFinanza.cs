@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace API.Dto.Finanza.Salida
+﻿namespace UI.WebMatricula3C2023.Models.Finanza.Entrada
 {
-    public class VerDetalleFinanza : General.RespuestaAPI
+    public class EditarFinanza : General.EntradaAPI
     {
         public int Codigo { get; set; }
         public int TotalMaterias { get; set; }
