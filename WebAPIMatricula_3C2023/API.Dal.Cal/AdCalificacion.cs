@@ -41,9 +41,9 @@ namespace API.Dal.Calificacion
                 {
                     dato = new DatosCalificacion();
                     dato.Codigo = Convert.ToInt32(objDr["Codigo"].ToString());
-                    dato.NotaProyecto = Convert.ToInt32(objDr["NotaProyecto"].ToString());
-                    dato.NotaTareas = Convert.ToInt32(objDr["NotaTareas"].ToString());
-                    dato.NotaTrabajoCotidiano = Convert.ToInt32(objDr["NotaTrabajoCotidiano"].ToString());
+                    dato.NotaProyecto = (float)Convert.ToDouble(objDr["NotaProyecto"].ToString());
+                    dato.NotaTareas = (float)Convert.ToDouble(objDr["NotaTareas"].ToString());
+                    dato.NotaTrabajoCotidiano = (float)Convert.ToDouble(objDr["NotaTrabajoCotidiano"].ToString());
                     dato.CodigoEstudiante = Convert.ToInt32(objDr["CodigoEstudiante"].ToString());
                     dato.CodigoProfesor = Convert.ToInt32(objDr["CodigoProfesor"].ToString());
                     dato.CodigoCurso = Convert.ToInt32(objDr["CodigoCurso"].ToString());
@@ -80,9 +80,9 @@ namespace API.Dal.Calificacion
                 if (objDr.Read())
                 {
                     resultado.Codigo = Convert.ToInt32(objDr["Codigo"].ToString());
-                    resultado.NotaProyecto = Convert.ToInt32(objDr["NotaProyecto"].ToString());
-                    resultado.NotaTareas = Convert.ToInt32(objDr["NotaTareas"].ToString());
-                    resultado.NotaTrabajoCotidiano = Convert.ToInt32(objDr["NotaTrabajoCotidiano"].ToString());
+                    resultado.NotaProyecto = (float)Convert.ToDouble(objDr["NotaProyecto"].ToString());
+                    resultado.NotaTareas = (float)Convert.ToDouble(objDr["NotaTareas"].ToString());
+                    resultado.NotaTrabajoCotidiano = (float)Convert.ToDouble(objDr["NotaTrabajoCotidiano"].ToString());
                     resultado.CodigoEstudiante = Convert.ToInt32(objDr["CodigoEstudiante"].ToString());
                     resultado.CodigoProfesor = Convert.ToInt32(objDr["CodigoProfesor"].ToString());
                     resultado.CodigoCurso = Convert.ToInt32(objDr["CodigoCurso"].ToString());
@@ -124,9 +124,9 @@ namespace API.Dal.Calificacion
                 if (objDr.Read())
                 {
                     resultado.Codigo = Convert.ToInt32(objDr["Codigo"].ToString());
-                    resultado.NotaProyecto = Convert.ToInt32(objDr["NotaProyecto"].ToString());
-                    resultado.NotaTareas = Convert.ToInt32(objDr["NotaTareas"].ToString());
-                    resultado.NotaTrabajoCotidiano = Convert.ToInt32(objDr["NotaTrabajoCotidiano"].ToString());
+                    resultado.NotaProyecto = (float)Convert.ToDouble(objDr["NotaProyecto"].ToString());
+                    resultado.NotaTareas = (float)Convert.ToDouble(objDr["NotaTareas"].ToString());
+                    resultado.NotaTrabajoCotidiano = (float)Convert.ToDouble(objDr["NotaTrabajoCotidiano"].ToString());
                     resultado.CodigoEstudiante = Convert.ToInt32(objDr["CodigoEstudiante"].ToString());
                     resultado.CodigoProfesor = Convert.ToInt32(objDr["CodigoProfesor"].ToString());
                     resultado.CodigoCurso = Convert.ToInt32(objDr["CodigoCurso"].ToString());
