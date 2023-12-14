@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace API.Dto.Departamento.Entrada
+﻿namespace UI.WebMatricula3C2023.Models.Departamento.Salida
 {
-    public class AgregarDepartamento : General.EntradaAPI
+    public class EditarDepartamento : General.RespuestaAPI
     {
+        public int Codigo { get; set; }
         public string Nombre { get; set; }
         public string NombreDirector { get; set; }
         public string HorarioAtencion { get; set; }

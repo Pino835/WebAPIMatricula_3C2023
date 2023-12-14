@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace API.Dto.Departamento.Salida
+﻿namespace UI.WebMatricula3C2023.Models.Departamento.Salida
 {
-    public class VerTodosDepartamento : General.RespuestaAPI
+    public class VerTodosDepartamentos
     {
         public List<DatosDepartamento> ListaDepartamentos { get; set; }
 
-        public VerTodosDepartamento()
+        public VerTodosDepartamentos()
         {
             ListaDepartamentos = new List<DatosDepartamento>();
         }

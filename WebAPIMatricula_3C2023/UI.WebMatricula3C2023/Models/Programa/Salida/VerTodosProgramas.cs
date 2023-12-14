@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace API.Dto.Programa.Salida
+﻿namespace UI.WebMatricula3C2023.Models.Programa.Salida
 {
-    public class VerTodosPrograma : General.RespuestaAPI
+    public class VerTodosProgramas
     {
         public List<DatosPrograma> ListaProgramas { get; set; }
 
-        public VerTodosPrograma()
+        public VerTodosProgramas()
         {
             ListaProgramas = new List<DatosPrograma>();
         }
