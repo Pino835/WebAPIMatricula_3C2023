@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace API.Dto.Evento.Salida
+﻿namespace UI.WebMatricula3C2023.Models.Evento.Salida
 {
-    public class EditarEvento : General.RespuestaAPI
+    public class VerTodosEventos
+    {
+        public List<DatosEvento> ListaEventos { get; set; }
+
+        public VerTodosEventos()
+        {
+            ListaEventos = new List<DatosEvento>();
+        }
+    }
+
+    public class DatosEvento
     {
         public int Codigo { get; set; }
         public string NombreEvento { get; set; }

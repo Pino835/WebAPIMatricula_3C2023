@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - UI.WebMatricula1C2023</title>
+    <title>@ViewData["Title"] - UI.WebMatricula3C2023</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/UI.WebMatricula3C2023.styles.css" asp-append-version="true" />
@@ -31,7 +31,7 @@
 </head>
 <body>
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow gradient-custom-2" style="background-color: #eee;">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" asp-controller="Home" asp-action="Index">Punto de venta</a>
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" asp-controller="Home" asp-action="Index">Gestión de Matrícula</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,8 +55,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="file"></span>
+                            <a class="nav-link" asp-controller="Curso" asp-action="Index">
+                                <span data-feather="grid"></span>
                                 Cursos
                             </a>
                         </li>
@@ -84,6 +84,18 @@
                             <a class="nav-link" asp-controller="Finanza" asp-action="Index">
                                 <span data-feather="grid"></span>
                                 Financiamiento
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Evento" asp-action="Index">
+                                <span data-feather="grid"></span>
+                                Eventos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Calificacion" asp-action="Index">
+                                <span data-feather="grid"></span>
+                                Calificaciones
                             </a>
                         </li>
                         <li class="nav-item">
@@ -130,7 +142,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - UI.WebMatricula1C2023 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2023 - UI.WebMatricula3C2023 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -138,8 +150,11 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/Producto.js"></script>
     <script src="~/js/Estudiante.js"></script>
+    <script src="~/js/Curso.js"></script>
     <script src="~/js/Profesor.js"></script>
     <script src="~/js/Finanza.js"></script>
+    <script src="~/js/Evento.js"></script>
+    <script src="~/js/Calificacion.js"></script>
     <script src="~/js/dashboard.js" asp-append-version="true"></script>
 
 

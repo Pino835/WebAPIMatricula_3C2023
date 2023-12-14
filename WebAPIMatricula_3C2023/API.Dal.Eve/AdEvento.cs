@@ -42,7 +42,7 @@ namespace API.Dal.Evento
                     dato.Codigo = Convert.ToInt32(objDr["Codigo"].ToString());
                     dato.NombreEvento = objDr["NombreEvento"].ToString();
                     dato.NombreInvitado = objDr["NombreInvitado"].ToString();
-                    dato.Horario = Convert.ToDateTime(objDr["Horario"].ToString());
+                    dato.Horario = objDr["Horario"].ToString();
                     dato.Lugar = objDr["Lugar"].ToString();
                     dato.TipoSello = objDr["TipoSello"].ToString();
                     dato.CodigoDepartamento = Convert.ToInt32(objDr["CodigoDepartamento"].ToString());
@@ -81,7 +81,7 @@ namespace API.Dal.Evento
                     resultado.Codigo = Convert.ToInt32(objDr["Codigo"].ToString());
                     resultado.NombreEvento = objDr["NombreEvento"].ToString();
                     resultado.NombreInvitado = objDr["NombreInvitado"].ToString();
-                    resultado.Horario = Convert.ToDateTime(objDr["Horario"].ToString());
+                    resultado.Horario = objDr["Horario"].ToString();
                     resultado.Lugar = objDr["Lugar"].ToString();
                     resultado.TipoSello = objDr["TipoSello"].ToString();
                     resultado.CodigoDepartamento = Convert.ToInt32(objDr["CodigoDepartamento"].ToString());
@@ -125,7 +125,7 @@ namespace API.Dal.Evento
                     resultado.Codigo = Convert.ToInt32(objDr["Codigo"].ToString());
                     resultado.NombreEvento = objDr["NombreEvento"].ToString();
                     resultado.NombreInvitado = objDr["NombreInvitado"].ToString();
-                    resultado.Horario = Convert.ToDateTime(objDr["Horario"].ToString());
+                    resultado.Horario = objDr["Horario"].ToString();
                     resultado.Lugar = objDr["Lugar"].ToString();
                     resultado.TipoSello = objDr["TipoSello"].ToString();
                     resultado.CodigoDepartamento = Convert.ToInt32(objDr["CodigoDepartamento"].ToString());
