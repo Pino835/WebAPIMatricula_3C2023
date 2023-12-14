@@ -21,7 +21,7 @@
         if (validarCamposDepartamento()) {
 
             var codigoDepartamento = document.getElementById("IDAgregarDepartamentoCodigo").value;
-
+            console.log(codigoDepartamento)
             if (codigoDepartamento == "") {
 
                 $.ajax({
@@ -40,6 +40,7 @@
                     //contentType: 'application/json',
                     success: function (result) {
                         limpiarCampos();
+                        console.log(data)
                         $('#modalVentanaExitosa').modal('show');
                     },
                     error: function (request, status, err) {

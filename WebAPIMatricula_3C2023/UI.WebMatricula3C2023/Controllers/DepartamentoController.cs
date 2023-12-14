@@ -25,15 +25,15 @@ namespace UI.WebMatricula3C2023.Controllers
             var colores = new List<string>();
             var valores = new List<string>();
 
-            foreach (var estado in listaDepartamentos.ListaDepartamentos.GroupBy(e => e.Nombre)
+            foreach (var estado in listaDepartamentos.ListaDepartamentos.GroupBy(e => e.AulaAtencion)
                 .Select(group => new {
-                    Nombre = group.Key,
+                    AulaAtencion = group.Key,
                     Cantidad = group.Count()
-                }).OrderBy(x => x.Nombre))
+                }).OrderBy(x => x.AulaAtencion))
             {
                 string color = String.Format("#{0:X6}", random.Next(0x1000000));
 
-                etiquetas.Add(estado.Nombre);
+                etiquetas.Add(estado.AulaAtencion.ToString());
                 valores.Add(estado.Cantidad.ToString());
                 colores.Add(color);
             }
