@@ -9,9 +9,9 @@ namespace API.Dto.Calificacion.Entrada
     public class EditarCalificacion : General.EntradaAPI
     {
         public int Codigo { get; set; }
-        public int NotaProyecto { get; set; }
-        public int NotaTareas { get; set; }
-        public int NotaTrabajoCotidiano { get; set; }
+        public float NotaProyecto { get; set; }
+        public float NotaTareas { get; set; }
+        public float NotaTrabajoCotidiano { get; set; }
         public int CodigoEstudiante { get; set; }
         public int CodigoProfesor { get; set; }
         public int CodigoCurso { get; set; }

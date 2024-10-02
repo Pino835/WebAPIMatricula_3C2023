@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace API.Dto.Calificacion.Salida
+﻿namespace UI.WebMatricula3C2023.Models.Calificacion.Entrada
 {
-    public class VerDetalleCalificacion : General.RespuestaAPI
+    public class EditarCalificacion
     {
         public int Codigo { get; set; }
         public float NotaProyecto { get; set; }

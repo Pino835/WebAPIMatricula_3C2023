@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace API.Dto.Evento.Entrada
+﻿namespace UI.WebMatricula3C2023.Models.Evento.Entrada
 {
-    public class AgregarEvento : General.EntradaAPI
+    public class AgregarEvento
     {
         public string NombreEvento { get; set; }
         public string NombreInvitado { get; set; }
